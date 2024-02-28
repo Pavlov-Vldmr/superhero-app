@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# SuperHero APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+For all the superhero data you've needed.
+Powerstats. Biography. Appearance. Work. Connections. Images.
+From both the universe, and more.
 
-Currently, two official plugins are available:
+- API [SuperHero API](https://superheroapi.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Start project
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+npm install
+npn run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Frameworks, Platforms and Libraries
+
+![React](https://img.shields.io/badge/-React-090909?style=for-the-badge&logo=react&logoColor=47C5FB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![typeScript](https://img.shields.io/badge/-typeScript-090909?style=for-the-badge&logo=typeScript)
+
+![html5](https://img.shields.io/badge/-HTML5-090909?style=for-the-badge&logo=html5)
+![css3](https://img.shields.io/badge/-css3-090909?style=for-the-badge&logo=css3&logoColor=7acef4)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+
+![npm](https://img.shields.io/badge/-NPM-090909?style=for-the-badge&logo=npm)
