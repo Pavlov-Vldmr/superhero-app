@@ -1,7 +1,11 @@
+// import CardContainer from "../../components/CardContainer/CardContainer";
+
+import CardContainer from "../../components/CardContainer/CardContainer";
+
 function HomePage() {
     return (
         <>
-            <code>Home page</code>
+            <CardContainer></CardContainer>
         </>
     );
 }

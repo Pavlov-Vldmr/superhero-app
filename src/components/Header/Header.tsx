@@ -5,8 +5,6 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-
-
 function Header() {
     return (
         <>
@@ -15,10 +13,7 @@ function Header() {
                 maxWidth={false}
                 sx={{
                     backgroundColor: "#181D1E",
-                    display: 'flex',
-                    alignItems: 'center'
                 }}>
-
                 <Container maxWidth='lg'>
                     <Box
                         height={100}
@@ -28,8 +23,6 @@ function Header() {
                             justifyContent: 'space-between',
                             alignItems: 'center'
                         }}>
-
-                        {/* <Link href="/" underline="none" color="#fff"> */}
                         <Typography
                             variant="h6"
                             noWrap
@@ -47,7 +40,6 @@ function Header() {
                         >
                             SuperHero App
                         </Typography>
-                        {/* </Link> */}
                         <Box>
                             <ButtonGroup
                                 color="inherit"
@@ -66,7 +58,6 @@ function Header() {
                                 </Button>
 
                                 {/* TODO: Theme change btn */}
-
 
                             </ButtonGroup>
                         </Box>
