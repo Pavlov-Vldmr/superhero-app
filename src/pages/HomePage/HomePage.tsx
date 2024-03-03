@@ -1,11 +1,14 @@
-// import CardContainer from "../../components/CardContainer/CardContainer";
-
+import Container from "@mui/material/Container/Container";
 import CardContainer from "../../components/CardContainer/CardContainer";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 function HomePage() {
     return (
         <>
-            <CardContainer></CardContainer>
+            <Container maxWidth='lg'>
+                <SearchBar></SearchBar>
+                <CardContainer></CardContainer>
+            </Container>
         </>
     );
 }
