@@ -7,6 +7,7 @@ import { FavoritesPage } from './pages/favorites-page'
 import { SignupPage } from './pages/sign-up-page'
 import { SigninPage } from './pages/sign-in-page'
 import { ProductPage } from './pages/product-page'
+import { NotFoundPage } from './pages/not-found-page'
 
 
 import './App.css'
@@ -21,12 +22,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/product" element={<ProductPage />} />
-
           <Route path="/search" element={<SearchPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/signin" element={<SigninPage />} />
+
+          <Route path='*' element={<NotFoundPage />} />
 
 
         </Routes>
