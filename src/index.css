@@ -76,3 +76,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* MUI users styles */
+
+.MuiInputBase-input[type='text'],
+.MuiInputBase-input[type='email'],
+.MuiInputBase-input[type='password'] {
+  color: rgb(209, 209, 209);
+}
+
+.MuiButtonBase-root[type='submit'] {
+  background-color: #5cc7b2;
+  transition: all .3s ease-in-out;
+}
+
+.MuiButtonBase-root[type='submit']:hover {
+  background-color: #65dbc4;
+}
