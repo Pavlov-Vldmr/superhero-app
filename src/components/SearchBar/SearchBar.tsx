@@ -1,6 +1,8 @@
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
+import Button from '@mui/material/Button/Button';
+import Box from '@mui/material/Box';
 
 
 function SearchBar() {
@@ -35,27 +37,47 @@ function SearchBar() {
     const StyledInputBase = styled(InputBase)(({ theme }) => ({
         color: 'inherit',
         '& .MuiInputBase-input': {
-            padding: theme.spacing(1, 1, 1, 0),
-            // vertical padding + font size from searchIcon
-            paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-            transition: theme.transitions.create('width'),
-            width: '100%',
-            [theme.breakpoints.up('md')]: {
-                width: '20ch',
-            },
+            // padding: theme.spacing(1, 1, 1, 0),
+            // // vertical padding + font size from searchIcon
+            // paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+            paddingLeft: '3em',
+            // transition: theme.transitions.create('width'),
+            width: '10rem',
+            // [theme.breakpoints.up('lg')]: {
+            //     width: '100%',
+            // },
         },
     }));
     return (
         <>
-            <Search>
-                <SearchIconWrapper>
-                    <SearchIcon />
-                </SearchIconWrapper>
-                <StyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                />
-            </Search>
+            <Box sx={{
+                display: "flex",
+                alignItems: 'center'
+            }}>
+                <Search className='TEST' sx={{
+                    marginTop: '2rem'
+                }}>
+                    <SearchIconWrapper>
+                        <SearchIcon />
+                    </SearchIconWrapper>
+                    <StyledInputBase
+                        // fullWidth
+                        placeholder="Type name"
+                        inputProps={{ 'aria-label': 'search' }}
+                    />
+                    <Button
+                        type="submit"
+                        size="small"
+                        variant="contained"
+                        sx={{ borderRadius: '0 10px' }}
+                    >
+                        Search
+                    </Button>
+
+                </Search>
+
+            </Box>
+
         </>
     )
 }
