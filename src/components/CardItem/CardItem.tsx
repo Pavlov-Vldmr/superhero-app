@@ -12,7 +12,8 @@ function CardItem() {
             <Card sx={{
                 maxWidth: 300,
                 backgroundColor: "#181D1E",
-                color: '#fff'
+                color: '#fff',
+                clipPath: 'polygon(100% 0, 100% 95%, 95% 100%, 0 100%, 0 0)'
             }}>
                 <CardActionArea>
                     <CardMedia
