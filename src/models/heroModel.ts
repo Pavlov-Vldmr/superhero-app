@@ -37,7 +37,6 @@ interface IHero {
         relatives: string;
     }
     images: {
-        // url: string;
         lg: string;
         md: string;
         sm: string;
@@ -49,9 +48,6 @@ interface IHeroesData extends IHero {
     key: React.Key;
     id: number;
     name: string;
-    // image: {
-    //     url: string;
-    // }
 }
 
 export type { IHero, IHeroesData };

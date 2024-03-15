@@ -9,7 +9,6 @@ import { SigninPage } from './pages/sign-in-page'
 import { ProductPage } from './pages/product-page'
 import { NotFoundPage } from './pages/not-found-page'
 
-
 import './App.css'
 import Header from './components/Header/Header'
 
@@ -27,10 +26,7 @@ function App() {
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/signin" element={<SigninPage />} />
-
           <Route path='*' element={<NotFoundPage />} />
-
-
         </Routes>
       </Router>
     </>

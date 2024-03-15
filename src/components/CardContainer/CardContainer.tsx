@@ -10,9 +10,6 @@ function CardContainer(props: { data: IHero[]; }) {
     return (
         <>
             <Container maxWidth="lg">
-                <code>Home page.tsx</code>
-                <br></br>
-                <code>card container</code>
                 <Grid container
                     spacing={{ xs: 2, md: 3 }}
                     columns={{ xs: 4, sm: 8, md: 12 }}

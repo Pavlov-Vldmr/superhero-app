@@ -14,7 +14,7 @@ function CardItem(props: { item: IHero }) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        console.log('Current location is ', location);
+        // console.log('Current location is ', location);
     }, [location]);
 
     const el = props.item
