@@ -4,7 +4,7 @@ For all the superhero data you've needed.
 Powerstats. Biography. Appearance. Work. Connections. Images.
 From both the universe, and more.
 
-- API [SuperHero API](https://superheroapi.com)
+- API [SuperHero API](https://akabab.github.io/superhero-api/)
 
 ## Start project
 
