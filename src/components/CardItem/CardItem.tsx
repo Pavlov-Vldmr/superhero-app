@@ -5,9 +5,17 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { IHero } from '../../models/heroModel';
 
-
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function CardItem(props: { item: IHero }) {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        console.log('Current location is ', location);
+    }, [location]);
 
     const el = props.item
     return (
@@ -20,7 +28,9 @@ function CardItem(props: { item: IHero }) {
                 color: '#fff',
                 clipPath: 'polygon(100% 0, 100% 95%, 95% 100%, 0 100%, 0 0)'
             }}>
-                <CardActionArea>
+                <CardActionArea onClick={() => navigate(`/product`, { replace: false })}>
+
+
                     <CardMedia
                         component="img"
                         height="340"
