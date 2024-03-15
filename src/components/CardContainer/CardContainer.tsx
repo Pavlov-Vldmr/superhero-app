@@ -5,7 +5,7 @@ import { IHero } from "../../models/heroModel";
 
 function CardContainer(props: { data: IHero[]; }) {
 
-    const data = props.data as IHero[]
+    const data = props.data
 
     return (
         <>
