@@ -7,7 +7,6 @@ import Box from '@mui/material/Box';
 
 function SearchBar() {
 
-
     const Search = styled('div')(({ theme }) => ({
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
@@ -15,9 +14,7 @@ function SearchBar() {
         '&:hover': {
             backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
-        marginRight: theme.spacing(2),
-        marginLeft: 0,
-        width: '100%',
+        marginBottom: '2rem',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(3),
             width: 'auto',
@@ -37,17 +34,15 @@ function SearchBar() {
     const StyledInputBase = styled(InputBase)(({ theme }) => ({
         color: 'inherit',
         '& .MuiInputBase-input': {
-            // padding: theme.spacing(1, 1, 1, 0),
-            // // vertical padding + font size from searchIcon
-            // paddingLeft: `calc(1em + ${theme.spacing(4)})`,
             paddingLeft: '3em',
-            // transition: theme.transitions.create('width'),
+            transition: theme.transitions.create('width'),
             width: '10rem',
             // [theme.breakpoints.up('lg')]: {
             //     width: '100%',
             // },
         },
     }));
+
     return (
         <>
             <Box sx={{
@@ -55,13 +50,13 @@ function SearchBar() {
                 alignItems: 'center'
             }}>
                 <Search className='TEST' sx={{
-                    marginTop: '2rem'
+                    marginTop: '2rem',
+                    borderTopRightRadius: '20px',
                 }}>
                     <SearchIconWrapper>
                         <SearchIcon />
                     </SearchIconWrapper>
                     <StyledInputBase
-                        // fullWidth
                         placeholder="Type name"
                         inputProps={{ 'aria-label': 'search' }}
                     />
@@ -73,11 +68,8 @@ function SearchBar() {
                     >
                         Search
                     </Button>
-
                 </Search>
-
             </Box>
-
         </>
     )
 }
