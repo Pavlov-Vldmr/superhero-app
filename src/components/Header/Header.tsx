@@ -16,7 +16,7 @@ function Header() {
                 }}>
                 <Container maxWidth='lg'>
                     <Box
-                        height={100}
+                        height={80}
                         px={2}
                         sx={{
                             display: "flex",
