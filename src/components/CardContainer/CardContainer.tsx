@@ -15,7 +15,6 @@ function CardContainer(props: { data: IHero[]; }) {
                     columns={{ xs: 4, sm: 8, md: 12 }}
                 >
                     {data.slice(0, 20).map((el, index) => (
-
                         <Grid xs={4} sm={4} md={4} key={index}
                             sx={{
                                 display: 'flex',
