@@ -11,24 +11,28 @@ import { NotFoundPage } from './pages/not-found-page'
 
 import './App.css'
 import Header from './components/Header/Header'
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary'
 
 function App() {
 
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/product" element={<ProductPage />} />
-          <Route path="/search" element={<SearchPage />} />
-          <Route path="/history" element={<HistoryPage />} />
-          <Route path="/favorites" element={<FavoritesPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/signin" element={<SigninPage />} />
-          <Route path='*' element={<NotFoundPage />} />
-        </Routes>
-      </Router>
+      <ErrorBoundary>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/product" element={<ProductPage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/signin" element={<SigninPage />} />
+            <Route path='*' element={<NotFoundPage />} />
+          </Routes>
+        </Router>
+      </ErrorBoundary>
+
     </>
   )
 }

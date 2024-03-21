@@ -6,6 +6,7 @@ import { CardActionArea } from '@mui/material';
 import { IHero } from '../../models/heroModel';
 
 import { useNavigate } from 'react-router-dom';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 function CardItem(props: { item: IHero }) {
     const navigate = useNavigate();
@@ -37,6 +38,7 @@ function CardItem(props: { item: IHero }) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
+
             </Card>
         </>
     )

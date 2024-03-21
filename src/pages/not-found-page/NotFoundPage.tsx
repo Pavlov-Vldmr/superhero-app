@@ -1,6 +1,7 @@
 import { Container } from "@mui/system";
 import Box from '@mui/material/Box';
 import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
 function NotFoundPage() {
     return (
