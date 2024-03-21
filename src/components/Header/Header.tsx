@@ -4,10 +4,14 @@ import Link from '@mui/material/Link';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ThemeSwitcherBtn from './ThemeSwitcherBtn';
 
 function Header() {
+
+
     return (
         <>
+
             <Container
                 disableGutters={true}
                 maxWidth={false}
@@ -58,7 +62,7 @@ function Header() {
                                 </Button>
 
                                 {/* TODO: Theme change btn */}
-
+                                <ThemeSwitcherBtn />
                             </ButtonGroup>
                         </Box>
                     </Box>
